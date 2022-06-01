@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <div id="app">
+    <input type="text" name="nome" id="nome"/>
+    <input type="text" name="nome" id="nome2"/>
+
+    <button class="botao">Adicionar</button>
+  </div>
+
+  <script>
+    // var inputElement = document.getElementById('nome')
+    // var inputElement = document.getElementsByTagName('input')[0]; // vetor
+    // var inputElement = document.getElementsByClassName('')[0]; // vetor
+
+    //querySelector
+    // var inputElement = document.querySelector('body div#app input ');
+    // var inputElement = document.querySelector('input[name=nome]');
+    // var inputElement = document.querySelectorAll('input');
+ 
+    // manipulando os elemenots da DOM
+    // var inputElement = document.querySelector('input[name=nome]');
+    // var btnElement = document.querySelector('button.botao');
+    
+    // btnElement.onclick = function() {
+    //   alert(inputElement.value);
+    // }
+    // console.log(inputElement);
+  
+    // Criar elemento
+    // var linkElement = document.createElement('a');
+
+    // linkElement.setAttribute('href', 'http://google.com');
+    // linkElement.setAttribute('class', 'link-website');
+
+    // var textElement = document.createTextNode('Acessar Google.com');
+    // linkElement.appendChild(textElement);
+
+    // var containerElement = document.querySelector('#app')
+    // containerElement.appendChild(linkElement);
+
+    //Alterar estilo
+    var boxEl = document.createElement('div');
+    boxEl.setAttribute('class', 'box');
+    var containerElement = document.querySelector('#app')
+    containerElement.appendChild(boxEl);
+
+    var boxElement = document.querySelector('.box');
+    boxElement.style.width = 200;
+    boxElement.style.height = 200;
+    boxElement.style.backgroundColor = '#f00';
+
+    
+  </script>
+</body>
+
+</html>
